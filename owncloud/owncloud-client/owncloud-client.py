@@ -23,13 +23,13 @@ class subinfo(info.infoclass):
     def setTargets(self):
         self.versionInfo.setDefaultValues(
             tarballUrl="https://download.owncloud.com/desktop/stable/owncloudclient-${VERSION}.tar.xz",
-            tarballInstallSrc="owncloudclient-${VERSION}",
-            gitUrl="[git]https://github.com/owncloud/client",
+            tarballInstallSrc="cicomcloudclient-${VERSION}",
+            gitUrl="[git]https://github.com/lunabash/cicom-cloud-desktop",
         )
 
-        self.description = "ownCloud Desktop Client"
-        self.displayName = "ownCloud"
-        self.webpage = "https://github.com/owncloud/client"
+        self.description = "Cicom Cloud Desktop Client"
+        self.displayName = "Cicom Cloud"
+        self.webpage = "https://cloud.cicom.co.za"
 
     def setDependencies(self):
         self.buildDependencies["craft/craft-blueprints-owncloud"] = None
